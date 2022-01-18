@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		751A11AE27949E06002F4E2A /* SearchModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A11AD27949E06002F4E2A /* SearchModuleBuilder.swift */; };
+		75408FC12796EA01008F6C60 /* WhatsNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75408FC02796EA01008F6C60 /* WhatsNewsViewController.swift */; };
+		75408FC42796EA79008F6C60 /* WhatsNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75408FC32796EA79008F6C60 /* WhatsNewsView.swift */; };
+		75408FCA27971E1B008F6C60 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75408FC927971E1B008F6C60 /* Date.swift */; };
+		75408FCC27971F05008F6C60 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75408FCB27971F05008F6C60 /* String.swift */; };
 		75E2F8122792F56F00E794C5 /* AppDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F8112792F56F00E794C5 /* AppDetailHeaderView.swift */; };
 		75E2F8142792F5C700E794C5 /* AppDetailHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F8132792F5C700E794C5 /* AppDetailHeaderViewController.swift */; };
 		75E2F81A2793247B00E794C5 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F8192793247B00E794C5 /* SearchPresenter.swift */; };
@@ -34,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		751A11AD27949E06002F4E2A /* SearchModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModuleBuilder.swift; sourceTree = "<group>"; };
+		75408FC02796EA01008F6C60 /* WhatsNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewsViewController.swift; sourceTree = "<group>"; };
+		75408FC32796EA79008F6C60 /* WhatsNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewsView.swift; sourceTree = "<group>"; };
+		75408FC927971E1B008F6C60 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		75408FCB27971F05008F6C60 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		75E2F8112792F56F00E794C5 /* AppDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailHeaderView.swift; sourceTree = "<group>"; };
 		75E2F8132792F5C700E794C5 /* AppDetailHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailHeaderViewController.swift; sourceTree = "<group>"; };
 		75E2F8192793247B00E794C5 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -89,6 +97,31 @@
 				751A11AD27949E06002F4E2A /* SearchModuleBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		75408FBD2796E9BC008F6C60 /* WhatsNews */ = {
+			isa = PBXGroup;
+			children = (
+				75408FC22796EA6B008F6C60 /* View */,
+				75408FBE2796E9E9008F6C60 /* Controller */,
+			);
+			path = WhatsNews;
+			sourceTree = "<group>";
+		};
+		75408FBE2796E9E9008F6C60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75408FC02796EA01008F6C60 /* WhatsNewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75408FC22796EA6B008F6C60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75408FC32796EA79008F6C60 /* WhatsNewsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		75E2F815279308BF00E794C5 /* AppDetailHeader */ = {
@@ -165,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				751A11AC27949DFC002F4E2A /* Builder */,
+				75408FBD2796E9BC008F6C60 /* WhatsNews */,
 				E0E1D2A62034A36C0011E01A /* Search */,
 				E0E1D2A72034A3780011E01A /* AppDetail */,
 				75E2F815279308BF00E794C5 /* AppDetailHeader */,
@@ -247,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				E0E1D3D3203C4AA50011E01A /* UIColor+Extensions.swift */,
+				75408FC927971E1B008F6C60 /* Date.swift */,
+				75408FCB27971F05008F6C60 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -467,6 +503,7 @@
 				75E2F81A2793247B00E794C5 /* SearchPresenter.swift in Sources */,
 				F8114FC522A3E77500102830 /* AppDetailView.swift in Sources */,
 				E0E1D387203AE45F0011E01A /* WebRequest.swift in Sources */,
+				75408FCA27971E1B008F6C60 /* Date.swift in Sources */,
 				F8A1E03C2248382F00FE6448 /* Monads.swift in Sources */,
 				75E2F8142792F5C700E794C5 /* AppDetailHeaderViewController.swift in Sources */,
 				E0E1D3D4203C4AA50011E01A /* UIColor+Extensions.swift in Sources */,
@@ -474,9 +511,12 @@
 				E0E1D3D1203C48D70011E01A /* AppDetailViewController.swift in Sources */,
 				E0E1D358203ADC590011E01A /* NetworkManager.swift in Sources */,
 				E0E1D39C203AE6420011E01A /* ITunesSong.swift in Sources */,
+				75408FC12796EA01008F6C60 /* WhatsNewsViewController.swift in Sources */,
 				E0E1D2952034A3350011E01A /* SearchViewController.swift in Sources */,
 				E0E1D39F203AE7400011E01A /* ImageDownloader.swift in Sources */,
+				75408FCC27971F05008F6C60 /* String.swift in Sources */,
 				F8114FBE22A3DBF400102830 /* SearchView.swift in Sources */,
+				75408FC42796EA79008F6C60 /* WhatsNewsView.swift in Sources */,
 				E0E1D395203AE5E20011E01A /* ITunesSearchResult.swift in Sources */,
 				E0E1D392203AE58B0011E01A /* ITunesSearchService.swift in Sources */,
 				E0E1D2932034A3350011E01A /* AppDelegate.swift in Sources */,
